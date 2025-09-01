@@ -2,7 +2,6 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import ThemeToggle from "./ThemeToggle"
 
 /**
  * Barra de navegación principal
@@ -25,7 +24,7 @@ export default function NavBar() {
   ]
 
   return (
-    <nav className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 transition-all duration-300">
+    <nav className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200 sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
@@ -39,7 +38,7 @@ export default function NavBar() {
                 className="h-8 w-8 sm:h-10 sm:w-10 transition-transform duration-300 group-hover:scale-110"
               />
             </div>
-            <span className="font-bold text-lg sm:text-xl text-gray-900 dark:text-white transition-colors duration-300">
+            <span className="font-bold text-lg sm:text-xl text-gray-900 transition-colors duration-300">
               PROA Córdoba
             </span>
           </Link>
@@ -50,23 +49,19 @@ export default function NavBar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 px-3 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 group"
+                className="relative text-gray-600 hover:text-blue-600 transition-all duration-300 px-3 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 group"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
               </Link>
             ))}
-            <div className="ml-4">
-              <ThemeToggle />
-            </div>
           </div>
 
-          {/* Mobile menu button and theme toggle */}
-          <div className="lg:hidden flex items-center space-x-2">
-            <ThemeToggle />
+          {/* Mobile menu button */}
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
               aria-expanded={isOpen}
             >
               <span className="sr-only">Abrir menú principal</span>
@@ -103,7 +98,7 @@ export default function NavBar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-3 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-300 border-l-4 border-transparent hover:border-blue-500"
+                className="block px-4 py-3 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-100 rounded-lg transition-all duration-300 border-l-4 border-transparent hover:border-blue-500"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

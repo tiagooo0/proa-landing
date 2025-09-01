@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import NewsCard from "../components/NewsCard"
 import Section from "../components/Section"
 import ImageCarousel from "../components/ImageCarousel"
+import FloatingContactButton from "../components/FloatingContactButton"
 import { noticias } from "../lib/data"
 
 /**
@@ -51,7 +52,7 @@ export default function HomePage() {
         </section>
 
         {/* Accesos Rápidos */}
-        <Section title="Accesos Rápidos" className="bg-white dark:bg-gray-900">
+        <Section title="Accesos Rápidos" className="bg-white">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { href: "/calendario", title: "Calendario", icon: "📅", desc: "Eventos y fechas importantes" },
@@ -62,20 +63,18 @@ export default function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-6 text-center transition-colors duration-200 group"
+                className="bg-gray-50 hover:bg-gray-100 rounded-lg p-6 text-center transition-colors duration-200 group"
               >
                 <div className="text-4xl mb-3">{item.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-brand dark:group-hover:text-blue-400">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{item.desc}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
               </Link>
             ))}
           </div>
         </Section>
 
         {/* Últimas Noticias */}
-        <Section title="Últimas Noticias" className="bg-gray-50 dark:bg-gray-800">
+        <Section title="Últimas Noticias" className="bg-gray-50">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {ultimasNoticias.map((noticia) => (
               <NewsCard
@@ -95,6 +94,7 @@ export default function HomePage() {
         </Section>
       </main>
       <Footer />
+      <FloatingContactButton />
     </>
   )
 }
