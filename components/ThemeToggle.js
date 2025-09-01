@@ -7,6 +7,10 @@ import { useTheme } from "./ThemeProvider"
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme()
 
+  if (!theme) {
+    return <div className="p-2 w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 animate-pulse" />
+  }
+
   return (
     <button
       onClick={toggleTheme}

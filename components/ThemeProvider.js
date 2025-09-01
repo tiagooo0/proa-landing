@@ -35,7 +35,7 @@ export function ThemeProvider({ children }) {
   }
 
   if (!mounted) {
-    return <div className="opacity-0">{children}</div>
+    return children
   }
 
   return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>
