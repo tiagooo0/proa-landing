@@ -1,14 +1,14 @@
 import Link from "next/link"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
-import Hero from "../components/Hero"
 import NewsCard from "../components/NewsCard"
 import Section from "../components/Section"
+import ImageCarousel from "../components/ImageCarousel"
 import { noticias } from "../lib/data"
 
 /**
  * Página de inicio
- * Incluye hero, accesos rápidos y últimas noticias
+ * Incluye carrusel de imágenes, hero, accesos rápidos y últimas noticias
  */
 export default function HomePage() {
   const ultimasNoticias = noticias.slice(0, 3)
@@ -20,7 +20,10 @@ export default function HomePage() {
   )
 
   const secondaryButton = (
-    <Link href="/admisiones" className="btn btn-outline text-lg px-8 py-3">
+    <Link
+      href="/admisiones"
+      className="btn btn-outline text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-gray-900"
+    >
       Admisiones
     </Link>
   )
@@ -29,15 +32,26 @@ export default function HomePage() {
     <>
       <NavBar />
       <main>
-        <Hero
-          title="Escuela Experimental PROA Córdoba"
-          subtitle="Formamos ciudadanos críticos y competentes para el siglo XXI a través de una educación innovadora centrada en el desarrollo de software y las nuevas tecnologías."
-          primaryButton={primaryButton}
-          secondaryButton={secondaryButton}
-        />
+        <section className="relative">
+          <ImageCarousel />
+          {/* Hero content overlay */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center text-white px-4 max-w-4xl">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">Escuela Experimental PROA Córdoba</h1>
+              <p className="text-xl md:text-2xl mb-8 text-pretty opacity-90">
+                Formamos ciudadanos críticos y competentes para el siglo XXI a través de una educación innovadora
+                centrada en el desarrollo de software y las nuevas tecnologías.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                {primaryButton}
+                {secondaryButton}
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Accesos Rápidos */}
-        <Section title="Accesos Rápidos" className="bg-white">
+        <Section title="Accesos Rápidos" className="bg-white dark:bg-gray-900">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { href: "/calendario", title: "Calendario", icon: "📅", desc: "Eventos y fechas importantes" },
@@ -48,18 +62,20 @@ export default function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="bg-gray-50 hover:bg-gray-100 rounded-lg p-6 text-center transition-colors duration-200 group"
+                className="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-6 text-center transition-colors duration-200 group"
               >
                 <div className="text-4xl mb-3">{item.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-brand">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-brand dark:group-hover:text-blue-400">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">{item.desc}</p>
               </Link>
             ))}
           </div>
         </Section>
 
         {/* Últimas Noticias */}
-        <Section title="Últimas Noticias" className="bg-gray-50">
+        <Section title="Últimas Noticias" className="bg-gray-50 dark:bg-gray-800">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {ultimasNoticias.map((noticia) => (
               <NewsCard
