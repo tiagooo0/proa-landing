@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: 96 165 250;
+  --accent: 239 68 68;
+}
+
+/* Utilidades personalizadas */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-brand {
+  background: rgb(var(--brand));
+  @apply text-white hover:opacity-90 focus:ring-blue-400;
+}
+
+.btn-outline {
+  @apply border-2 border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-gray-400;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-accent {
+  background: rgb(var(--accent));
+  @apply text-white;
+}

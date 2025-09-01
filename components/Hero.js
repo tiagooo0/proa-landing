@@ -1,0 +1,19 @@
+/**
+ * Componente Hero reutilizable
+ * Para usar en diferentes páginas con título, subtítulo y botones
+ * Props: title, subtitle, primaryButton, secondaryButton
+ */
+export default function Hero({ title, subtitle, primaryButton, secondaryButton, className = "" }) {
+  return (
+    <section className={`bg-gradient-to-r from-blue-50 to-indigo-100 py-16 ${className}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">{title}</h1>
+        {subtitle && <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">{subtitle}</p>}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {primaryButton}
+          {secondaryButton}
+        </div>
+      </div>
+    </section>
+  )
+}
