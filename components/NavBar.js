@@ -15,10 +15,9 @@ export default function NavBar() {
     { href: "/", label: "Inicio" },
     { href: "/institucion", label: "Institución" },
     { href: "/proa", label: "Sobre PRoA" },
-    { href: "/academico", label: "Académico" },
+    { href: "/academico", label: "Sobre Nosotros" },
     { href: "/noticias", label: "Noticias" },
     { href: "/calendario", label: "Calendario" },
-    { href: "/documentos", label: "Documentos" },
     { href: "/admisiones", label: "Admisiones" },
     { href: "/contacto", label: "Contacto" },
   ]

@@ -6,7 +6,7 @@
  * Muestra el teléfono de contacto de la escuela
  */
 export default function FloatingContactButton() {
-  const phoneNumber = "+54 351 123-4567" // Número de teléfono de la escuela
+  const phoneNumber = "+54 351 4348894" // Número de teléfono de la escuela
 
   const handleCall = () => {
     window.open(`tel:${phoneNumber.replace(/\s|-/g, "")}`, "_self")

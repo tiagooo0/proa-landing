@@ -16,43 +16,24 @@ export default function InstitucionPage() {
             {/* Historia */}
             <div className="mb-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Historia</h3>
-              <div className="prose prose-lg text-gray-600">
-                <p>
-                  La Escuela Experimental PROA Córdoba nació en 2020 como parte del programa provincial "Escuelas PROA"
-                  del Ministerio de Educación de Córdoba, con el objetivo de transformar la educación secundaria a
-                  través de metodologías innovadoras y tecnología de vanguardia.
-                </p>
-                <p>
-                  Desde sus inicios, nuestra institución se ha caracterizado por implementar el Aprendizaje Basado en
-                  Proyectos (ABP), la interdisciplinariedad y la integración de las Tecnologías de la Información y
-                  Comunicación (TIC) en todos los procesos educativos.
-                </p>
-                <p>
-                  En 2022, incorporamos la orientación en Desarrollo de Software, convirtiéndonos en referentes en la
-                  formación de jóvenes programadores y desarrolladores en la provincia.
-                </p>
-              </div>
+             <div className="prose prose-lg text-gray-600">
+  <p>
+    El ProA Capital Centro se fundó en el año 2014 en el Barrio de los Cuartetos, donde funcionó durante sus
+    primeros años. En ese espacio comenzó a consolidarse como una escuela innovadora dentro del programa ProA,
+    ofreciendo a los estudiantes una propuesta educativa distinta centrada en la programación y la tecnología.
+  </p>
+  <p>
+    En 2018, la institución se trasladó a su actual ubicación en Agustín Garzón 1221, lo que permitió contar con
+    un edificio más adecuado y con mejores condiciones para el desarrollo de sus actividades escolares.
+  </p>
+  <p>
+    Desde entonces, el ProA Capital Centro actualmente cuenta con más de 10 años y continúa creciendo y formando
+    a jóvenes con una preparación sólida en desarrollo de software.
+  </p>
+</div>
+
             </div>
 
-            {/* Misión y Visión */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Misión</h3>
-                <p className="text-gray-600">
-                  Formar ciudadanos críticos, creativos y competentes para el siglo XXI, brindando una educación
-                  integral que combine excelencia académica con valores humanos, preparando a nuestros estudiantes para
-                  los desafíos del mundo digital y tecnológico.
-                </p>
-              </div>
-              <div className="bg-red-50 p-6 rounded-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Visión</h3>
-                <p className="text-gray-600">
-                  Ser reconocidos como la institución educativa líder en innovación pedagógica y formación tecnológica
-                  en Córdoba, contribuyendo al desarrollo de una sociedad más justa, inclusiva y tecnológicamente
-                  avanzada.
-                </p>
-              </div>
-            </div>
 
             {/* Autoridades */}
             <div>
@@ -62,7 +43,7 @@ export default function InstitucionPage() {
                   <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-4xl">👩‍🏫</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900">Prof. María González</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">Sandra Cerutti</h4>
                   <p className="text-brand font-medium">Directora</p>
                   <p className="text-gray-600 text-sm mt-2">
                     Licenciada en Ciencias de la Educación, especialista en innovación pedagógica
@@ -72,18 +53,28 @@ export default function InstitucionPage() {
                   <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-4xl">👨‍🏫</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900">Prof. Carlos Rodríguez</h4>
-                  <p className="text-brand font-medium">Vicedirector</p>
+                  <h4 className="text-lg font-semibold text-gray-900">David Muller</h4>
+                  <p className="text-brand font-medium">Coordinador de sede</p>
                   <p className="text-gray-600 text-sm mt-2">
                     Ingeniero en Sistemas, especialista en tecnologías educativas
                   </p>
                 </div>
                 <div className="text-center">
                   <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl">👩‍💼</span>
+                    <span className="text-4xl">👩</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900">Lic. Ana Martínez</h4>
-                  <p className="text-brand font-medium">Secretaria Académica</p>
+                  <h4 className="text-lg font-semibold text-gray-900">Evelina Cena</h4>
+                  <p className="text-brand font-medium">Coordinadora de sede</p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    Licenciada en Administración Educativa, gestión académica
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-gray-200 w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-4xl">👩</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900">Eugenia Ferrero</h4>
+                  <p className="text-brand font-medium">Coordinadora de curso</p>
                   <p className="text-gray-600 text-sm mt-2">
                     Licenciada en Administración Educativa, gestión académica
                   </p>

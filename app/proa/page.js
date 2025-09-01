@@ -120,6 +120,36 @@ export default function ProaPage() {
               </div>
             </div>
           </div>
+          <Section title="Oferta educativa" className="bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="prose prose-lg text-gray-600">
+              <p>
+                El programa escolar del ProA Centro ofrece a sus estudiantes una formación innovadora y
+                actualizada en el campo de la tecnología y el desarrollo de software. Con jornadas de doble
+                escolaridad, su propósito principal es preparar a los jóvenes para los desafíos del mundo
+                digital, brindándoles herramientas que les permitan comprender, diseñar y crear software, al
+                mismo tiempo que se favorece su futura inserción en el ámbito laboral.
+              </p>
+              <p>
+                La propuesta académica abarca lenguajes de programación, lógica computacional, bases de datos,
+                robótica y desarrollo de aplicaciones, promoviendo en los estudiantes el pensamiento crítico,
+                la creatividad y la resolución de problemas. A su vez, el modelo educativo contempla espacios de
+                tutorías personalizadas que acompañan los distintos ritmos de aprendizaje, así como la
+                participación en clubes, talleres y actividades que enriquecen la experiencia escolar.
+              </p>
+              <p>
+                El ProA Centro cuenta con laboratorios equipados con tecnología de última generación y otorga
+                especial relevancia al aprendizaje del inglés aplicado a la informática, una competencia clave
+                para acceder a oportunidades académicas y profesionales a nivel internacional.
+              </p>
+              <p>
+                Al concluir sus estudios, los egresados reciben el título de Bachiller en Desarrollo de
+                Software, lo que amplía sus posibilidades de continuar estudios superiores o de incorporarse
+                directamente al sector tecnológico.
+              </p>
+            </div>
+          </div>
+        </Section>
         </Section>
       </main>
       <Footer />
