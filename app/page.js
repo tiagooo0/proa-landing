@@ -38,7 +38,7 @@ export default function HomePage() {
           {/* Hero content overlay */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white px-4 max-w-4xl">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">Escuela Experimental PROA Córdoba</h1>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">Escuela Experimental PRoA Córdoba</h1>
               <p className="text-xl md:text-2xl mb-8 text-pretty opacity-90">
                 Formamos ciudadanos críticos y competentes para el siglo XXI a través de una educación innovadora
                 centrada en el desarrollo de software y las nuevas tecnologías.
@@ -58,7 +58,7 @@ export default function HomePage() {
               { href: "/calendario", title: "Calendario", icon: "📅", desc: "Eventos y fechas importantes" },
               { href: "/documentos", title: "Documentos", icon: "📄", desc: "Reglamentos y formularios" },
               { href: "/admisiones", title: "Admisiones", icon: "🎓", desc: "Proceso de inscripción" },
-              { href: "/proa", title: "Sobre PROA", icon: "🏫", desc: "Conocé nuestro programa" },
+              { href: "/proa", title: "Sobre PRoA", icon: "🏫", desc: "Conocé nuestro programa" },
             ].map((item) => (
               <Link
                 key={item.href}

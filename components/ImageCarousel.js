@@ -11,17 +11,17 @@ export default function ImageCarousel() {
 
   const images = [
     {
-      src: "/modern-school-building-exterior-with-students.png",
+      src: "/fachada.jpg",
       alt: "Fachada principal de PROA Córdoba",
       title: "Nuestra Institución",
     },
     {
-      src: "/computer-lab-with-students-coding.png",
+      src: "/laboratorio.jpg",
       alt: "Laboratorio de computación",
       title: "Tecnología de Vanguardia",
     },
     {
-      src: "/students-working-together-in-classroom.png",
+      src: "/laburando.jpeg",
       alt: "Estudiantes trabajando en equipo",
       title: "Aprendizaje Colaborativo",
     },

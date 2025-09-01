@@ -16,9 +16,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <div className="space-y-2 text-gray-300">
-              <p>📧 info@proacordoba.edu.ar</p>
-              <p>📞 (0351) 123-4567</p>
-              <p>📍 Córdoba, Argentina</p>
+              <p>📧 cordobacentro.ds@escuelasproa.edu.ar</p>
+              <p>📞 (0351) 4348894</p>
+              <p>📍 Agustin Garzon 1221 B°San Vicente</p>
             </div>
           </div>
 
@@ -45,13 +45,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Institución</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Programa Escuelas PROA – Ministerio de Educación de Córdoba
+              Programa Escuelas PRoA – Ministerio de Educación de Córdoba
             </p>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Escuela Experimental PROA Córdoba. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} Escuela Experimental PRoA Córdoba. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

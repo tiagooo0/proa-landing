@@ -14,7 +14,7 @@ export default function NavBar() {
   const navItems = [
     { href: "/", label: "Inicio" },
     { href: "/institucion", label: "Institución" },
-    { href: "/proa", label: "Sobre PROA" },
+    { href: "/proa", label: "Sobre PRoA" },
     { href: "/academico", label: "Académico" },
     { href: "/noticias", label: "Noticias" },
     { href: "/calendario", label: "Calendario" },
@@ -39,7 +39,7 @@ export default function NavBar() {
               />
             </div>
             <span className="font-bold text-lg sm:text-xl text-gray-900 transition-colors duration-300">
-              PROA Córdoba
+              PRoA Córdoba
             </span>
           </Link>
 
