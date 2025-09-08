@@ -56,7 +56,6 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { href: "/calendario", title: "Calendario", icon: "📅", desc: "Eventos y fechas importantes" },
-              { href: "/documentos", title: "Documentos", icon: "📄", desc: "Reglamentos y formularios" },
               { href: "/admisiones", title: "Admisiones", icon: "🎓", desc: "Proceso de inscripción" },
               { href: "/proa", title: "Sobre PRoA", icon: "🏫", desc: "Conocé nuestro programa" },
             ].map((item) => (
