@@ -50,27 +50,36 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+{/* Accesos Rápidos */}
+<Section title="Accesos Rápidos" className="bg-white">
+  {/* Contenedor centrado y con ancho máximo para que no se abra de más */}
+  <div className="mx-auto max-w-5xl">
+    {/* Centro el grupo de tarjetas */}
+    <div className="flex flex-wrap justify-center gap-6">
+      {[
+        { href: "/calendario", title: "Calendario", icon: "📅", desc: "Eventos y fechas importantes" },
+        { href: "/admisiones", title: "Admisiones", icon: "🎓", desc: "Proceso de inscripción" },
+        { href: "/proa", title: "Sobre PRoA", icon: "🏫", desc: "Conocé nuestro programa" },
+      ].map((item) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          // ancho fijo para que el centrado sea perfecto y no se estire
+          className="w-[260px] sm:w-[280px] bg-gray-50 hover:bg-gray-100 rounded-lg p-6 text-center transition-colors duration-200 group flex flex-col items-center justify-center"
+        >
+          <div className="text-4xl mb-3">{item.icon}</div>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
+            {item.title}
+          </h3>
+          <p className="text-gray-600 text-sm">{item.desc}</p>
+        </Link>
+      ))}
+    </div>
+  </div>
+</Section>
 
-        {/* Accesos Rápidos */}
-        <Section title="Accesos Rápidos" className="bg-white">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { href: "/calendario", title: "Calendario", icon: "📅", desc: "Eventos y fechas importantes" },
-              { href: "/admisiones", title: "Admisiones", icon: "🎓", desc: "Proceso de inscripción" },
-              { href: "/proa", title: "Sobre PRoA", icon: "🏫", desc: "Conocé nuestro programa" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="bg-gray-50 hover:bg-gray-100 rounded-lg p-6 text-center transition-colors duration-200 group"
-              >
-                <div className="text-4xl mb-3">{item.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </Link>
-            ))}
-          </div>
-        </Section>
+
+
 
         {/* Últimas Noticias */}
         <Section title="Últimas Noticias" className="bg-gray-50">
