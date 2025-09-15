@@ -22,6 +22,7 @@ export default function NoticiasPage() {
                 title={noticia.title}
                 date={noticia.date}
                 excerpt={noticia.excerpt}
+                image={noticia.image} // <-- agregamos la imagen aquí
               />
             ))}
           </div>

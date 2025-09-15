@@ -19,9 +19,7 @@ export default function AdmisionesPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Matrícula de 1er. Año — CICLO LECTIVO 2026
               </h3>
-              <p className="text-sm text-gray-500 mb-6">
-                Información transcripta del documento oficial.
-              </p>
+              
 
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">

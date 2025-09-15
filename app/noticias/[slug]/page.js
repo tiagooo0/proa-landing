@@ -35,6 +35,15 @@ export default function NoticiaPage({ params }) {
               <p className="text-xl text-gray-600 leading-relaxed">{noticia.excerpt}</p>
             </header>
 
+            {/* Imagen de la noticia */}
+            {noticia.image && (
+              <img
+                src={noticia.image}
+                alt={noticia.title}
+                className="w-full h-96 object-cover mb-8 rounded"
+              />
+            )}
+
             <div
               className="prose prose-lg max-w-none text-gray-600"
               dangerouslySetInnerHTML={{ __html: noticia.content }}

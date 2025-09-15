@@ -74,7 +74,7 @@ export default function InstitucionPage() {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4">
                     <img 
-                      src="/Evelina.jpeg"
+                      src="/Eve.jpeg"
                       alt="Evelina Cena"
                       className="w-32 h-32 rounded-full object-cover"
                     />
