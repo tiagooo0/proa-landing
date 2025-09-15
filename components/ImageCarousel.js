@@ -26,7 +26,7 @@ export default function ImageCarousel() {
       title: "Aprendizaje Colaborativo",
     },
     {
-      src: "/graduation-ceremony-students-celebrating.png",
+      src: "/Egresados.jpeg",
       alt: "Ceremonia de graduación",
       title: "Formando el Futuro",
     },
